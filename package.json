@@ -1,0 +1,30 @@
+{
+  "name": "hexos-lab",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "node:eth": "hardhat node --port 8545",
+    "node:hexos": "hardhat node --port 8546",
+    "deploy:eth": "hardhat run --network ethLocal scripts/deploy_eth.js",
+    "deploy:hexos": "hardhat run --network hexosLocal scripts/deploy_hexos.js",
+    "deploy:all": "npm run deploy:eth && npm run deploy:hexos",
+    "burn": "hardhat run --network ethLocal scripts/burn.js",
+    "check": "hardhat run --network hexosLocal scripts/check_hexos.js",
+    "list": "hardhat run --network hexosLocal scripts/list_stakes.js",
+    "relayer": "node -r dotenv/config scripts/relayer.js"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.1.0",
+    "chai": "^4.5.0",
+    "cross-env": "^10.0.0",
+    "dotenv": "^17.2.1",
+    "ethers": "^6.15.0",
+    "hardhat": "^2.26.3",
+    "mocha": "^10.8.2"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.4.0"
+  }
+}
