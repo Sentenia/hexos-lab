@@ -12,10 +12,11 @@ E: npm run burn
 F: npx hardhat run --network hexosLocal scripts/check_native.js
 
 ## Anti-whale (MintRouter.sol)
-CAP: 1B HEXOS total · DAILY_CAP_WEI: 5,000,000 HEXOS/day
-MAX_BURN_PER_PROOF_8: 10,000,000 HEX (8 dec)
-SMALL_CAP_8: first 100k HEX gets +15% boost
-COOLDOWN: 60s per address
+- CAP: 1B HEXOS total
+- DAILY_CAP_WEI: 5,000,000 HEXOS/day
+- MAX_BURN_PER_PROOF_8: 10,000,000 HEX (8 dec)
+- SMALL_CAP_8: first 100k HEX gets +15% boost
+- COOLDOWN: 60s per address
 
 ## Secrets
-Copy .env.example ? .env and set RELAYER_PK (66 chars).
+Copy .env.example ? .env and set RELAYER_PK (66 chars from HEXOS node).
