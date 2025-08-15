@@ -13,7 +13,8 @@
     "burn": "hardhat run --network ethLocal scripts/burn.js",
     "check": "hardhat run --network hexosLocal scripts/check_hexos.js",
     "list": "hardhat run --network hexosLocal scripts/list_stakes.js",
-    "relayer": "node -r dotenv/config scripts/relayer.js"
+    "relayer": "node -r dotenv/config scripts/relayer.js",
+    "remaining": "hardhat run --network hexosLocal scripts/remaining.js"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-ethers": "^3.1.0",
